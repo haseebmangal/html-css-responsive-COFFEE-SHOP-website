@@ -11,16 +11,12 @@
     src: url(./images/fonts/JosefinSans-VariableFont_wght.ttf);
 }
 body{
-    background-image: linear-gradient(rgba(255,255,255,0,395) rgba(255,255,255,0,395), url(./images/));
+    background-image: linear-gradient(rgba(255,255,255,0,395) rgba(255,255,255,0,395), url(./images/coffee-beans-background.jpg));
     background-size: cover;
+    background-position: center;
     background-attachment: fixed;
     font-family: josefin2;
     color: rgb(75, 38, 20); 
-}
-#logo img{
-    width: 80px;
-    height: 80px;
-    padding-left: 40px;
 }
 
 nav{
@@ -28,8 +24,14 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
+#logo img{
+    width: 80px;
+    height: 80px;
+    padding-left: 40px;
+}
+
 .tags{
-    margin-top: 20px;
+    margin-top: 10px;
     padding-right: 60px;
 }
 .tags a{
@@ -38,23 +40,142 @@ nav{
     border-radius: 10px;
     text-align: center;
     text-decoration: none;
-    padding: 12px, 20px;
+    padding: 8px 20px;
 }
-/* for smaller screens */
-@media(max-width: 1000px){
+.home{
+    display: flex;
+    justify-content: space-between;
+}
+
+.home_heading{
+    padding: 150px 70px;
+    font-size: large;
+    font-family: josefin;
+}
+.home_heading h1{
+    font-size: 45px;
+}
+h1 em{
+    font-size: 60px;
+    font-style: normal;
+}
+.home_heading p{
+    padding: 5px 0;
+}
+.home_heading button{
+    color: rgb(75, 38, 20);
+    border: 1px solid rgb(75, 38, 20);
+    background-color: transparent;
+    padding: 10px;
+    margin-left: 20%;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+.offer{
+    margin-top: -90px;
+    margin-left: -100px;
+
+}
+.offer img{
+    width: 400px;
+}
+.home_image{
+    width: 400px;
+}
+.home_image{
+    position: relative;
+    animation: move 1s both;
+}
+
+@keyframes moves{
+    from{right: 0px;}
+    to{right: 100px;}
+}
+
+/* coffee */
+.coffee_container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+.coffee_container .coffee_cup{
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 50px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0, 265), rgba(0, 0, 0, 0, 265)), url();
+    background-size: cover;
+    color: #fff;
+    transition: transform 0.5s ease-in 0.4;
+}
+.coffee_cup :hover{
+    transform: scale(1.1);
+}
+.coffee_cup img{
+    width: 150px;
+    height: 130px;
+    position: relative;
+    top: -40px;
+    border-radius: 50%;
+}
+.coffee_cup h2{
+    margin-top: -15px;
+}
+.coffee_cup p{
+    font-size: 13px;
+}
+
+
+
+
+/* small 1000px */
+@media(max-width: 980px){ 
     #logo img{
         width: 70px;
-        height: 70px
-        padding-left: 30px;
+        height: 70px;
+        padding-left: 30px; 
     }
     .tags{
-        padding: 50px;
+        padding-right: 50px;
     }
     .tags a{
         padding: 10px 10px;
 
     }
+    /* home */
+    .home_heading{
+        padding: 150px 50px;
+
+    }
+    .home_heading h1{
+        font-size: 35px;
+    }
+    h1 em{
+        font-size: 50px;
+    }
+    .home_heading button{
+        padding: 8px;
+        margin-top: 8px;
+    }
+    .offer{
+        margin-top: -70px;
+        margin-left: -70px;
+    }
+    .offer img{
+        width: 300px;
+    }
+    .home_image img{
+        width: 300px;
+    }
+
+    @keyframes moves {
+        form{right: 0px;}
+        to{right: 50px;}
+    } 
 }
+
+
 /* for tablets or ipads */
 @media(max-width: 780px) {
     #logo img{
@@ -65,8 +186,47 @@ nav{
         font-size: 2.7vh;
         padding: 5px;
     }
-    
+    .home_heading{
+        padding: 150px, 20px;
+
+    }
+    .home_heading h1{
+        font-size: 25px;
+    }
+    h1 em{
+        font-size: 40px;
+    }
+    .home_heading img{
+        width: 15px;
+        padding: 5px;
+    }
+    .home_heading p{
+        font-size: small;
+    }
+    .home_heading button{
+        padding: 5px;
+    }
+    .offer{
+        margin-top: -70px;
+        margin-left: -70px;
+    }
+    .offer img{
+        width: 300px;
+    }
+    .home_image img{
+        width: 300px;
+    }
+    @keyframes moves {
+        from{right: 0%;}
+        to{right: 5%;}
+        
+    }
 }
+
+
+
+
+
 
 /* for mobiles */
 @media(max-width: 420px) {
@@ -83,5 +243,40 @@ nav{
         padding: 5px, 5px;
         font-size: 1.6vh;
     }
-    
+    /* home */
+    .home_heading{
+        padding: 60px, 20px;
+    }
+    .home_heading h1{
+        font-size: 3vh;
+    }
+    h1 em{
+        font-size: 4vh;
+    }
+    .home_heading img{
+        width: 10px;
+        padding: 2px;
+        margin: 8px 0;
+        margin-bottom: 0;
+    }
+    .home_heading p{
+        font-size: 1.3vh;
+    }
+    .home_heading button{
+        padding: 2px;
+        margin-left: 5px;
+        font-size: 1.3vh;
+
+    }
+    .offer{
+        margin-top: -40px;
+    }
+    .offer img{
+        width: 140px;
+    }
+    @keyframes moves {
+        from{right: 0;}
+        to{right: 5%;}
+        
+    }
 }
