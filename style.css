@@ -11,7 +11,7 @@
     src: url(./images/fonts/JosefinSans-VariableFont_wght.ttf);
 }
 body{
-    background-image: linear-gradient(rgba(255,255,255,0,395) rgba(255,255,255,0,395), url(./images/coffee-beans-background.jpg));
+    background-image: url(./images/coffee-beans-background.jpg), linear-gradient(rgba(255,255,255,0,395) rgba(255,255,255,0,395));
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -104,7 +104,7 @@ h1 em{
     border-radius: 10px;
     text-align: center;
     margin-bottom: 50px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0, 265), rgba(0, 0, 0, 0, 265)), url();
+    background-image: linear-gradient(rgba(0, 0, 0, 0, 265), rgba(0, 0, 0, 0, 265)), url(./images/coffee-beans.jpg);
     background-size: cover;
     color: #fff;
     transition: transform 0.5s ease-in 0.4;
@@ -173,6 +173,28 @@ h1 em{
         form{right: 0px;}
         to{right: 50px;}
     } 
+    /* coffee */
+    .coffee_container{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 90px;
+    }
+    .coffee_container .coffee_cup{
+        width: 190px;
+        height: 190px;
+    }
+    .coffee_cup img{
+        width: 150px;
+        height: 130px;
+    }
+    .coffee_cup h2{
+        margin-top: -15px;
+
+    }
+    .coffee_cup p{
+        font-size: 13px;
+        padding: 5px;
+    }
 }
 
 
@@ -220,6 +242,18 @@ h1 em{
         from{right: 0%;}
         to{right: 5%;}
         
+    }
+    /* coffee */
+    .coffee_container .coffee_cup{
+        width: 170px;
+        height: 170px;
+    }
+    .coffee_cup h2{
+        font-size: medium;
+        margin-top: -20px;
+    }
+    .coffee_cup p{
+        font-size: 1.7vh;
     }
 }
 
@@ -279,4 +313,27 @@ h1 em{
         to{right: 5%;}
         
     }
+    /* coffee */
+    .coffee_container{
+        display: grid;
+        grid-template-columns: 1;
+        gap: 30px;
+        margin-top: 30px;
+        margin-bottom: 70px;
+    }
+    .coffee_container .coffee_cup{
+        width: 250px;
+        height: 220px;
+    }
+    .coffee_cup img{
+        width: 180px;
+        height: 150px;
+    }
+    .coffee_cup h2{
+        margin-top: -15px;
+    }
+    .coffee_cup p{
+        padding: 10px; 
+    }
+
 }
