@@ -11,7 +11,9 @@
     src: url(./images/fonts/JosefinSans-VariableFont_wght.ttf);
 }
 body{
-    background-image: url(./images/coffee-beans-background.jpg), linear-gradient(rgba(255,255,255,0,395) rgba(255,255,255,0,395));
+    /* background-image: url(./images/coffee-beans-background.jpg), linear-gradient(rgba(255,255,255,0,395) rgba(255,255,255,0,395)); */
+    background: linear-gradient(rgba(255,255,255,0,395) rgba(255,255,255,0,395));
+    background-color: rgb(194, 178, 172);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -98,13 +100,17 @@ h1 em{
     justify-content: space-evenly;
     margin-top: 40px;
 }
+/* .coffee_container img{
+    background-image: linear-gradient(rgba(0, 0, 0, 0, 265), rgba(0, 0, 0, 0, 265));
+} */
 .coffee_container .coffee_cup{
     width: 150px;
     height: 200px;
     border-radius: 10px;
     text-align: center;
     margin-bottom: 50px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0, 265), rgba(0, 0, 0, 0, 265)), url(./images/coffee-beans.jpg);
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0, 265), rgba(0, 0, 0, 0, 265)), url(./images/coffee-beans.jpg); */
+    background-color: rgb(83, 62, 36);
     background-size: cover;
     color: #fff;
     transition: transform 0.5s ease-in 0.4;
@@ -113,7 +119,7 @@ h1 em{
     transform: scale(1.1);
 }
 .coffee_cup img{
-    width: 150px;
+    width: 150px; 
     height: 130px;
     position: relative;
     top: -40px;
@@ -125,6 +131,60 @@ h1 em{
 .coffee_cup p{
     font-size: 13px;
 }
+
+/* image text */
+.image_text{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px 40px;
+    margin-top: 30px;
+}
+.image_text img{
+    width: 400px;
+    margin-right: 40px;
+}
+.image_text p{
+    font-size: x-large;
+    font-weight: 500;
+    margin-right: 30px;
+    text-align: justify;
+}
+
+/* cold coffee section */
+.cold_coffee_container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 90px;
+    margin-top: 60px;
+
+}
+.cold_coffee_container .cold_cup{
+    width: 220px;
+    height: 260px;
+    border: 5px solid white;
+    text-align: center;
+    background-color: rgb(141, 126, 108);
+    background-color: rgba(185, 117, 83, 0, 0.589);
+    transition: transform 0.4s ease-in 0.09s;
+}
+.cold_cup:hover{
+    transform: translateY(-10px);
+}
+.cold_cup img{
+    padding: 30px 0;
+    width: 100px;
+    height: 150px;
+}
+.cold_coffee_container .text_body{
+    background-color: #fff;
+    padding: 12px;
+}
+.cold_cup .text_body h4{
+    font-size: 3vh;
+}
+
+
 
 
 
@@ -195,6 +255,27 @@ h1 em{
         font-size: 13px;
         padding: 5px;
     }
+    /* image_text */
+    .image_text{
+        padding: 40px 10px;
+        margin-top: 30px;
+    }
+    .image_text img{
+        width: 30%;
+    }
+    .image_text p{
+        font-size: 2vh;
+        font-weight: 400;
+        padding: 0 20px;
+    }
+    /* cold coffee section */
+    .cold_cup{
+        width: 180px;
+        height: 260px;
+    }
+    .cold_cup h4{
+        font-size: 2.2vh;
+    }
 }
 
 
@@ -254,6 +335,38 @@ h1 em{
     }
     .coffee_cup p{
         font-size: 1.7vh;
+    }
+
+    /* image text */
+    .image_text{
+        padding: 40px 0;
+        margin-top: 30px;
+    }
+    .image_text img{
+        width: 30%;
+    }
+    .image_text p{
+        font-size: 2vh;
+        font-weight: 400;
+        padding: 0 20px;
+    }
+    /* cold coffee section */
+    .cold_coffee_container{
+        display: grid;
+        grid-template-columns: 30% 30px;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 50px;
+        gap: 30px;
+    }
+    .cold_cup{
+        width: 220px;
+        height: 255px;
+    }
+    .cold_coffee_container img{
+        padding: 30px 40px;
+        width: 100px;
+        height: 150px;
     }
 }
 
@@ -334,6 +447,45 @@ h1 em{
     }
     .coffee_cup p{
         padding: 10px; 
+    }
+    /* image text */
+    .image_text{
+        display: grid;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 60px;
+    }
+    .image_text img{
+        width: 140px;
+        display: block;
+        margin: 0 auto;
+    }
+    .image_text p{
+        font-size: 2.6vh;
+        font-weight: 300;
+        margin-right: 0;
+        text-align: justify;
+        padding-top: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .cold_coffee_container{
+        display: grid;
+        grid-template-columns: 65%;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: -10px;
+        gap: 30px;
+    }
+    .cold_cup{
+        width: 220px;
+        height: 250px;
+
+    }
+    .cold_cup img{
+        padding: 30px 40px;
+        width: 100px;
+        height: 250px;
+
     }
 
 }
