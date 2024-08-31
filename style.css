@@ -27,8 +27,8 @@ nav{
     align-items: center;
 }
 #logo img{
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     padding-left: 40px;
 }
 
@@ -252,11 +252,11 @@ footer a img{
 
 
 
-/* small 1000px */ 
+/* large 1000px */ 
 @media(max-width: 980px){ 
     #logo img{
-        width: 70px;
-        height: 70px;
+        width: 80px;
+        height: 80px;
         padding-left: 30px; 
     }
     .tags{
@@ -368,8 +368,8 @@ footer a img{
 /* for tablets or ipads */
 @media(max-width: 780px) {
     #logo img{
-        height: 60px;
-        width: 60px;
+        height: 65px;
+        width: 65px;
     }
     .tags a{
         font-size: 2.7vh;
