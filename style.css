@@ -83,12 +83,12 @@ h1 em{
 }
 
 .home .home_image{
-    width: 500px;
+    width: 400px;
     position: relative;
     animation: move 1s both;
 }
 
-@keyframes moves{
+@keyframes move{
     from{right: 0px;}
     to{right: 100px;} 
 }
@@ -288,7 +288,7 @@ footer a img{
         width: 300px;
     }
 
-    @keyframes moves {
+    @keyframes move {
         form{right: 0px;}
         to{right: 50px;}
     } 
@@ -401,7 +401,7 @@ footer a img{
     .home_image img{
         width: 300px;
     }
-    @keyframes moves {
+    @keyframes move {
         from{right: 0%;}
         to{right: 5%;}
         
@@ -535,11 +535,12 @@ footer a img{
     .offer img{
         width: 140px;
     }
-    @keyframes moves {
+    @keyframes move {
         from{right: 0;}
         to{right: 5%;}
-        
     }
+
+    
     /* coffee */
     .coffee_container{
         display: grid;
